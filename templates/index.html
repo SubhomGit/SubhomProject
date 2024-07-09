@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Search Engine</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-ac7ah7+qNge4i9NdySm8qQG1QgjOZZk/9sqb7cTpFZtUPEH8m8L2Epb8E0V6gT5MmE9MEBo9J10ZnQZmZ1Vpww==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="/static/main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Search Engine</h1>
+        <form action="/search" method="get" class="search-form" id="searchForm">
+            <input type="text" name="q" placeholder="Search..." required>
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+        <div class="spinner" id="spinner" style="display: none;">
+            <i class="fas fa-spinner fa-spin"></i> Loading...
+        </div>
+    </div>
+</body>
+</html>
